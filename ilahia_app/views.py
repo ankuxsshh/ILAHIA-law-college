@@ -11,11 +11,11 @@ def about(request):
 def courses(request):
     return render(request, 'courses.html')
 
-def events(request):
-    return render(request, 'events.html')
+def gallery(request):
+    return render(request, 'gallery.html')
 
-def blog(request):
-    return render(request, 'blog.html')
+def managements(request):
+    return render(request, 'managements.html')
 
 def contact(request):
     return render(request, 'contact.html')
@@ -38,8 +38,8 @@ def research(request):
 def scholarship(request):
     return render(request, 'scholarship.html')
 
-def course_single(request):
-    return render(request, 'course_single.html')
+def course_details(request):
+    return render(request, 'course_details.html')
 
 def event_single(request):
     return render(request, 'event_single.html')

@@ -34,6 +34,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    
   </head>
 
   <body>
@@ -44,19 +45,19 @@
         <div class="container">
           <div class="row no-gutters">
             <div class="col-lg-4 text-center text-lg-left">
-              <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +91 300 303 0266</a>
+              <a class="text-light mr-3" href="callto:+443003030266"><strong>CALL</strong> +91 300 303 0266</a>
               <ul class="list-inline d-inline">
                 <li class="list-inline-item mx-0">
-                  <a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a>
+                  <a class="d-inline-block p-2 text-light" href="#"><i class="ti-facebook"></i></a>
                 </li>
                 <li class="list-inline-item mx-0">
-                  <a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a>
+                  <a class="d-inline-block p-2 text-light" href="#"><i class="ti-twitter-alt"></i></a>
                 </li>
                 <li class="list-inline-item mx-0">
-                  <a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a>
+                  <a class="d-inline-block p-2 text-light" href="#"><i class="ti-linkedin"></i></a>
                 </li>
                 <li class="list-inline-item mx-0">
-                  <a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a>
+                  <a class="d-inline-block p-2 text-light" href="#"><i class="ti-instagram"></i></a>
                 </li>
               </ul>
             </div>
@@ -72,10 +73,10 @@
                   <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a>
                 </li> {% endcomment %}
                 <li class="list-inline-item">
-                  <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a>
+                  <a class="text-uppercase text-light p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a>
+                  <a class="text-uppercase text-light p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a>
                 </li>
               </ul>
             </div>
@@ -86,40 +87,53 @@
       <div class="navigation w-100">
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <a class="navbar-brand" href="/"><img src="static/images/logo1.png" alt="logo" class="logo"></a>
+            <a class="navbar-brand" href="/"><img src="static/images/ilahialogo.png" alt="logo" class="logo"></a>
             <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
+                  <a class="nav-link" href="/">HOME</a>
                 </li>
-                <li class="nav-item @@about">
-                  <a class="nav-link" href="about">About</a>
+                <li class="nav-item dropdown view">
+                  <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="about">College Profile</a>
+                    <a class="dropdown-item" href="managements">Management</a>
+                    <a class="dropdown-item" href="principal_desk">Principal's Desk</a>
+                    <a class="dropdown-item" href="chairmans_desk">Chairman's Desk</a>
+                    <a class="dropdown-item" href="vicechairmans_desk">Vice Chairman's Desk</a>
+                    <a class="dropdown-item" href="admin_desk">Administrator’s Desk</a>
+                  </div>
                 </li>
                 <li class="nav-item @@courses">
                   <a class="nav-link" href="courses">COURSES</a>
                 </li>
-                <li class="nav-item @@events">
-                  <a class="nav-link" href="events">EVENTS</a>
-                </li>
-                <li class="nav-item @@blog">
-                  <a class="nav-link" href="blog">BLOG</a>
-                </li>
-                {% comment %} <li class="nav-item dropdown view">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                <li class="nav-item dropdown view">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ADMISSIONS</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="teacher">Teacher</a>
-                    <a class="dropdown-item" href="teacher-single">Teacher Single</a>
-                    <a class="dropdown-item" href="notice">Notice</a>
-                    <a class="dropdown-item" href="notice-single">Notice Details</a>
-                    <a class="dropdown-item" href="research">Research</a>
-                    <a class="dropdown-item" href="scholarship">Scholarship</a>
-                    <a class="dropdown-item" href="course-single">Course Details</a>
-                    <a class="dropdown-item" href="event-single">Event Details</a>
-                    <a class="dropdown-item" href="blog-single">Blog Details</a>
+                    <a class="dropdown-item" href="admission">Admission Process</a>
+                    <a class="dropdown-item" href="fee_structure">Fee Structure</a>
+                </li>
+                <li class="nav-item @@courses">
+                  <a class="nav-link" href="academics">ACADEMICS</a>
+                </li>
+                <li class="nav-item @@contact">
+                  <a class="nav-link" href="programs">PROGRAMS</a>
+                </li>
+                <li class="nav-item dropdown view">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CAMPUS LIFE</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="gallery">Gallery</a>
+                    <a class="dropdown-item" href="facilities">Facilities</a>
+                    <a class="dropdown-item" href="achievements">Our Achievements</a>
+                    <a class="dropdown-item" href="moot_court_society">Moot Court Society</a>
+                    <a class="dropdown-item" href="anti_ragging_cell">Anti Ragging Cell</a>
+                    <a class="dropdown-item" href="women_cell">Women Cell</a>
+                    <a class="dropdown-item" href="complaint_cell">Complaint Cell</a>
+                    <a class="dropdown-item" href="legal_aid_clinic">Legal Aid Clinic</a>
                   </div>
-                </li> {% endcomment %}
+                </li>
                 <li class="nav-item @@contact">
                   <a class="nav-link" href="contact">CONTACT</a>
                 </li>
@@ -205,7 +219,7 @@
 
     <!-- footer -->
     <footer>
-      <!-- newsletter -->
+      {% comment %} <!-- newsletter -->
       <div class="newsletter">
         <div class="container">
           <div class="row">
@@ -220,121 +234,122 @@
             </div>
           </div>
         </div>
+      </div> {% endcomment %}
+<!-- footer content -->
+<div class="footer bg-footer section border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+        <!-- logo -->
+        <a class="logo-footer" href="/"><img class="img-fluid mb-4" src="static/images/ilahialogo.png" alt="logo" style="height: 100px; width: 100px"/></a>
+        <ul class="list-unstyled text-white">
+          <li class="mb-2">Ilahi Law College, 123 Justice Road, New Delhi, India</li>
+          <li class="mb-2">+91 98765 43210</li>
+          <li class="mb-2">ilahialaw@gmail.com</li>
+          <li class="mb-2">Monday - Friday: 9:00 AM - 6:00 PM</li>
+        </ul>
       </div>
-      <!-- footer content -->
-      <div class="footer bg-footer section border-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
-              <!-- logo -->
-              <a class="logo-footer" href="/"><img class="img-fluid mb-4" src="static/images/logo1.png" alt="logo" style="height: 100px; width: 100px"/></a>
-              <ul class="list-unstyled">
-                <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
-                <li class="mb-2">+1 (2) 345 6789</li>
-                <li class="mb-2">+1 (2) 345 6789</li>
-                <li class="mb-2">ilahilawcollege@gmail.com</li>
-              </ul>
-            </div>
-            <!-- company -->
-            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-              <h4 class="text-white mb-5">COMPANY</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <a class="text-color" href="about.html">About Us</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="teacher.html">Our Teacher</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="contact.html">Contact</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="blog.html">Blog</a>
-                </li>
-              </ul>
-            </div>
-            <!-- links -->
-            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-              <h4 class="text-white mb-5">LINKS</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <a class="text-color" href="courses.html">Courses</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="event.html">Events</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="gallary.html">Gallary</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="faqs.html">FAQs</a>
-                </li>
-              </ul>
-            </div>
-            <!-- support -->
-            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-              <h4 class="text-white mb-5">SUPPORT</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <a class="text-color" href="#">Forums</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="#">Documentation</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="#">Language</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="#">Release Status</a>
-                </li>
-              </ul>
-            </div>
-            <!-- support -->
-            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-              <h4 class="text-white mb-5">RECOMMEND</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <a class="text-color" href="#">WordPress</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="#">LearnPress</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="#">WooCommerce</a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-color" href="#">bbPress</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- about -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <h4 class="text-white mb-5">ABOUT</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a class="text-color" href="about.html">About Us</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="faculty.html">Faculty</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="admissions.html">Admissions</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
+      <!-- academics -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <h4 class="text-white mb-5">ACADEMICS</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a class="text-color" href="courses.html">Courses</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="events.html">Seminars & Events</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="moot-court.html">Moot Court</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="library.html">Library</a>
+          </li>
+        </ul>
+      </div>
+      <!-- student support -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <h4 class="text-white mb-5">STUDENT SUPPORT</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a class="text-color" href="internships.html">Internships</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="legal-aid.html">Legal Aid Clinic</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="career.html">Career Guidance</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="faqs.html">FAQs</a>
+          </li>
+        </ul>
+      </div>
+      <!-- research & publications -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <h4 class="text-white mb-5">RESEARCH & PUBLICATIONS</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a class="text-color" href="journals.html">Law Journals</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="research.html">Research Papers</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="conferences.html">Conferences</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-color" href="publications.html">Publications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
       <!-- copyright -->
       <div class="copyright py-4 bg-footer">
         <div class="container">
           <div class="row">
-            <div class="col-sm-7 text-sm-left text-center">
-              <p class="mb-0">
+            <div class="col-sm-7 text-sm-left text-center text-white">
+              <p class="mb-0 text-white">
                 Copyright<script>
                            var CurrentYear = new Date().getFullYear()
                            document.write(CurrentYear)
-                         </script>© Developed and Designed By <a href="https://themefisher.com"></a>
-              </p>. All Rights Reserved.
+                         </script>© Developed and Designed By <a href="https://themefisher.com"><b>Inspirezest Technologies</b></a>
+              </p>All Rights Reserved.
             </div>
             <div class="col-sm-5 text-sm-right text-center">
               <ul class="list-inline">
                 <li class="list-inline-item">
-                  <a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a>
+                  <a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-white"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="d-inline-block p-2" href="https://www.twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a>
+                  <a class="d-inline-block p-2" href="https://www.twitter.com/themefisher"><i class="ti-twitter-alt text-white"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a>
+                  <a class="d-inline-block p-2" href="https://www.instagram.com/ilahialaw?igsh=MTFpb3ZrMnl0bTMx"><i class="ti-instagram text-white"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="d-inline-block p-2" href="https://dribbble.com/themefisher"><i class="ti-dribbble text-primary"></i></a>
+                  <a class="d-inline-block p-2" href="https://dribbble.com/themefisher"><i class="ti-dribbble text-white"></i></a>
                 </li>
               </ul>
             </div>

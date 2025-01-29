@@ -1,4 +1,5 @@
-{% extends 'base.html' %} Contact us | Ilahia Law College{% block content %}
+{% extends 'base.html' %}
+{% block content %}
   <!-- page title -->
   <section class="page-title-section overlay" data-background="static/images/backgrounds/page-title.jpg">
     <div class="container">
@@ -6,11 +7,12 @@
         <div class="col-md-8">
           <ul class="list-inline custom-breadcrumb">
             <li class="list-inline-item">
-              <a class="h2 text-primary font-secondary" href="@@page-link">Contact Us</a>
+              <a class="h2 text-primary font-secondary" href="contact.html">Contact Us</a>
             </li>
-            <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
           </ul>
-          <p class="text-lighten">Do you have other questions? Don't worry, there aren't any dumb questions. Just fill out the form below and we'll get back to you as soon as possible.</p>
+          <p class="text-lighten">
+            Home <i class="fa-solid fa-angles-right"></i> Contact Us
+          </p>
         </div>
       </div>
     </div>
@@ -22,25 +24,34 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="section-title">Contact Us</h2>
+          <h2 class="section-title">Get in Touch with Us</h2>
         </div>
       </div>
       <div class="row">
+        <!-- Contact Form -->
         <div class="col-lg-7 mb-4 mb-lg-0">
-          <form action="#">
-            <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name" />
-            <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email" />
-            <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject" />
-            <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
-            <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
+          <form action="" method="POST">
+            {% csrf_token %}
+            <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Full Name" required />
+            <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Your Email Address" required />
+            <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Inquiry Subject" required />
+            <textarea name="message" id="message" class="form-control mb-3" placeholder="Write your message here..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
           </form>
         </div>
+
+        <!-- Contact Info -->
         <div class="col-lg-5">
-          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt. Dolore, labore. Accusamus nulla sed cum aliquid exercitationem debitis error harum porro maxime quo iusto aliquam dicta modi earum fugiat, vel possimus commodi, deleniti et veniam, fuga ipsum praesentium. Odit unde optio nulla ipsum quae obcaecati! Quod esse natus quibusdam asperiores quam vel, tempore itaque architecto ducimus expedita</p>
-          <a href="tel:+8802057843248" class="text-color h5 d-block">+880 20 5784 3248</a>
-          <a href="mailto:yourmail@email.com" class="mb-5 text-color h5 d-block">yourmail@email.com</a>
+          <p class="mb-5">For inquiries related to **admissions, legal seminars, moot court competitions, or faculty appointments**, feel free to reach out via phone or email. Our dedicated team is here to assist you.</p>
+          <h5 class="text-primary">Contact Details</h5>
+          <a href="tel:+917034567890" class="text-color h5 d-block">+91 70345 67890</a>
+          <a href="mailto:info@ilahialawcollege.edu" class="mb-5 text-color h5 d-block">ilahialaw@gmail.com</a>
+
+          <h5 class="text-primary">Campus Address</h5>
           <p>
-            71 Shelton Street<br />London WC2H 9JQ England
+            Ilahia Law College,<br />
+            Muvattupuzha, Kerala - 686673,<br />
+            India
           </p>
         </div>
       </div>
@@ -48,10 +59,16 @@
   </section>
   <!-- /contact -->
 
-  <!-- gmap -->
+  <!-- Google Map Section -->
   <section class="section pt-0">
-    <!-- Google Map -->
-    <div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3928.8824516477644!2d76.56767599999999!3d10.026558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDAxJzM1LjYiTiA3NsKwMzQnMDMuNiJF!5e0!3m2!1sen!2sin!4v1738141076412!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- /gmap -->
 {% endblock %}
