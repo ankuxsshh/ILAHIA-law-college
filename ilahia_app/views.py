@@ -1,48 +1,116 @@
 from django.shortcuts import render
 
-# Create your views here.
+"""
+Views module for the Ilahia application.
+This module contains the view functions for the Ilahia application.
+"""
+
 
 def index(request):
-    return render(request, 'index.html')
+    """Render the index page."""
+    return render(request, "index.html")
+
 
 def about(request):
-    return render(request, 'about.html')
+    """Render the about page."""
+    return render(request, "about.html")
+
 
 def courses(request):
-    return render(request, 'courses.html')
+    """Render the courses page."""
+    return render(request, "courses.html")
+
 
 def gallery(request):
-    return render(request, 'gallery.html')
+    """Render the gallery page."""
+    return render(request, "gallery.html")
+
 
 def managements(request):
-    return render(request, 'managements.html')
+    """Render the managements page."""
+    return render(request, "managements.html")
+
 
 def contact(request):
-    return render(request, 'contact.html')
+    """Render the contact page."""
+    return render(request, "contact.html")
 
-def teacher(request):
-    return render(request, 'teacher.html')
 
-def teacher_single(request):
-    return render(request, 'teacher_single.html')
+def principal_desk(request):
+    """Render the principal's desk page."""
+    return render(request, "principal_desk.html")
 
-def notice(request):
-    return render(request, 'notice.html')
 
-def notice_single(request):
-    return render(request, 'notice_single.html')
+def chairmans_desk(request):
+    """Render the chairman's desk page."""
+    return render(request, "chairmans_desk.html")
 
-def research(request):
-    return render(request, 'research.html')
 
-def scholarship(request):
-    return render(request, 'scholarship.html')
+def admission_process(request):
+    """Render the admission process page."""
+    return render(request, "admission_process.html")
+
+
+def fee_structure(request):
+    """Render the fee structure page."""
+    return render(request, "fee_structure.html")
+
+
+def vicechairmans_desk(request):
+    """Render the vice chairman's desk page."""
+    return render(request, "vicechairmans_desk.html")
+
+
+def administrator_desk(request):
+    """Render the administrator's desk page."""
+    return render(request, "administrator_desk.html")
+
 
 def course_details(request):
-    return render(request, 'course_details.html')
+    """Render the course details page."""
+    return render(request, "course_details.html")
 
-def event_single(request):
-    return render(request, 'event_single.html')
 
-def blog_single(request):
-    return render(request, 'blog_single.html')
+def academics(request):
+    """Render the academics page."""
+    return render(request, "academics.html")
+
+
+def programs(request):
+    """Render the programs page."""
+    return render(request, "programs.html")
+
+
+def facilities(request):
+    """Render the facilities page."""
+    return render(request, "facilities.html")
+
+
+def achievements(request):
+    """Render the achievements page."""
+    return render(request, "achievements.html")
+
+
+def moot_court_society(request):
+    """Render the moot court society page."""
+    return render(request, "moot_court_society.html")
+
+
+def anti_ragging_cell(request):
+    """Render the anti-ragging cell page."""
+    return render(request, "anti_ragging_cell.html")
+
+
+def women_cell(request):
+    """Render the women cell page."""
+    return render(request, "women_cell.html")
+
+
+def complaint_cell(request):
+    """Render the complaint cell page."""
+    return render(request, "complaint_cell.html")
+
+
+def legal_aid_clinic(request):
+    """Render the legal aid clinic page."""
+    return render(request, "legal_aid_clinic.html")

@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ilahia_lawcollege.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ilahia_lawcollege.settings")
 
 application = get_asgi_application()

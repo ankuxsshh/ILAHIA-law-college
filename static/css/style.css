@@ -201,19 +201,19 @@ h6,
 }
 
 .btn-secondary::before {
-  background: #50addb;
+  background: #000000;
 }
 
 .btn-secondary:active {
-  background: #50addb;
+  background: #000000;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
 }
 
 .btn-secondary:hover {
-  background: #fff;
+  background: #000000;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
 }
 
 .btn-primary-outline {
@@ -223,12 +223,12 @@ h6,
 }
 
 .btn-primary-outline::before {
-  background: #fff;
+  background: #50addb;
 }
 
 .btn-primary-outline:hover {
   background: #50addb;
-  color: #50addb;
+  color: #ffffff;
 }
 
 .btn-primary-outline:active {
@@ -372,7 +372,7 @@ a h4:hover {
 }
 
 .bg-primary {
-  background: #50addb !important;
+  background: #50addbd9 !important;
 }
 
 .bg-secondary {
@@ -798,14 +798,14 @@ link:focus,
 
 /* banner feature */
 .feature-icon {
-  width: 80px;
+  width: auto;
   /* Ensures equal width */
-  height: 80px;
+  height: 58px;
   /* Ensures equal height */
   object-fit: contain;
   /* Keeps image aspect ratio */
   display: block;
-  margin: 0 auto 15px;
+  margin: 0px auto 0px;
   /* Centers the image */
 }
 
@@ -876,7 +876,7 @@ link:focus,
 }
 
 .card-img-top {
-  object-fit: contain;
+  object-fit: cover;
   height: 250px;
   width: 100%;
 }
