@@ -35,6 +35,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
   </head>
 
@@ -74,10 +76,7 @@
                   <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a>
                 </li> {% endcomment %}
                 <li class="list-inline-item">
-                  <a class="text-uppercase text-light p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="text-uppercase text-light p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a>
+                  <a class="text-uppercase text-light p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">CONTACT US</a>
                 </li>
               </ul>
             </div>
@@ -128,11 +127,6 @@
                     <a class="dropdown-item" href="gallery">Gallery</a>
                     <a class="dropdown-item" href="facilities">Facilities</a>
                     <a class="dropdown-item" href="achievements">Our Achievements</a>
-                    <a class="dropdown-item" href="moot_court_society">Moot Court Society</a>
-                    <a class="dropdown-item" href="anti_ragging_cell">Anti Ragging Cell</a>
-                    <a class="dropdown-item" href="women_cell">Women Cell</a>
-                    <a class="dropdown-item" href="complaint_cell">Complaint Cell</a>
-                    <a class="dropdown-item" href="legal_aid_clinic">Legal Aid Clinic</a>
                   </div>
                 </li>
                 <li class="nav-item @@contact">
@@ -146,58 +140,26 @@
     </header>
     <!-- /header -->
     <!-- Modal -->
-    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content rounded-0 border-0 p-4">
-          <div class="modal-header border-0">
-            <h3>Register</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <div class="login">
-              <form action="#" class="row">
-                <div class="col-12">
-                  <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone" />
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name" />
-                </div>
-                <div class="col-12">
-                  <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email" />
-                </div>
-                <div class="col-12">
-                  <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password" />
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">SIGN UP</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
           <div class="modal-header border-0">
-            <h3>Login</h3>
+            <h3>CONTACT US</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
             <form action="#" class="row">
               <div class="col-12">
-                <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone" />
-              </div>
-              <div class="col-12">
                 <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name" />
               </div>
               <div class="col-12">
-                <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password" />
+                <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone" />
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">LOGIN</button>
+                <input type="text" class="form-control mb-3" id="loginMessage" name="loginMessage" placeholder="Message" />
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Contact Now</button>
               </div>
             </form>
           </div>
@@ -206,7 +168,7 @@
     </div>
 
     <!-- WhatsApp and Call Buttons -->
-    <div class="fixed-buttons fade-up-section">
+    <div class="fixed-buttons">
       <!-- WhatsApp Button -->
       <a href="" class="btn-whatsapp-pulse whatsapp-button btn btn-success" aria-label="WhatsApp Us" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
@@ -220,22 +182,6 @@
 
     <!-- footer -->
     <footer>
-      {% comment %} <!-- newsletter -->
-      <div class="newsletter">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-              <h3 class="text-white">Subscribe Now</h3>
-              <form action="#">
-                <div class="input-wrapper">
-                  <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..." />
-                  <button type="submit" value="send" class="btn btn-primary">Join</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div> {% endcomment %}
 <!-- footer content -->
 <div class="footer bg-footer section border-bottom">
   <div class="container">
@@ -255,16 +201,16 @@
         <h4 class="text-white mb-5">ABOUT</h4>
         <ul class="list-unstyled">
           <li class="mb-3">
-            <a class="text-color" href="about.html">About Us</a>
+            <a class="text-color" href="about">About Us</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="faculty.html">Faculty</a>
+            <a class="text-color" href="managements">Management</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="admissions.html">Admissions</a>
+            <a class="text-color" href="admission_process">Admissions</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="contact.html">Contact</a>
+            <a class="text-color" href="contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -273,16 +219,16 @@
         <h4 class="text-white mb-5">ACADEMICS</h4>
         <ul class="list-unstyled">
           <li class="mb-3">
-            <a class="text-color" href="courses.html">Courses</a>
+            <a class="text-color" href="courses">Courses</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="events.html">Seminars & Events</a>
+            <a class="text-color" href="facilities">Facilities</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="moot-court.html">Moot Court</a>
+            <a class="text-color" href="programs">Programs</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="library.html">Library</a>
+            <a class="text-color" href="gallery">Gallery</a>
           </li>
         </ul>
       </div>
@@ -291,16 +237,16 @@
         <h4 class="text-white mb-5">STUDENT SUPPORT</h4>
         <ul class="list-unstyled">
           <li class="mb-3">
-            <a class="text-color" href="internships.html">Internships</a>
+            <a class="text-color" href="">Internships</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="legal-aid.html">Legal Aid Clinic</a>
+            <a class="text-color" href="">Legal Aid Clinic</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="career.html">Career Guidance</a>
+            <a class="text-color" href="">Career Guidance</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="faqs.html">FAQs</a>
+            <a class="text-color" href="">FAQs</a>
           </li>
         </ul>
       </div>
@@ -309,16 +255,16 @@
         <h4 class="text-white mb-5">RESEARCH & PUBLICATIONS</h4>
         <ul class="list-unstyled">
           <li class="mb-3">
-            <a class="text-color" href="journals.html">Law Journals</a>
+            <a class="text-color" href="">Law Journals</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="research.html">Research Papers</a>
+            <a class="text-color" href="">Research Papers</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="conferences.html">Conferences</a>
+            <a class="text-color" href="">Conferences</a>
           </li>
           <li class="mb-3">
-            <a class="text-color" href="publications.html">Publications</a>
+            <a class="text-color" href="">Publications</a>
           </li>
         </ul>
       </div>
@@ -378,5 +324,9 @@
 
     <!-- Main Script -->
     <script src="static/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

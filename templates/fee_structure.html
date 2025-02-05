@@ -1,4 +1,4 @@
-{% extends 'base.html' %} Fee Structure | Ilahia Law College{% block content %}
+{% extends 'base.html' %}Fee Structure | Ilahia Law College{% block content %}
   <!-- page title -->
   <section class="page-title-section overlay" data-background="static/images/backgrounds/page-title.jpg">
     <div class="container">
@@ -18,4 +18,60 @@
     </div>
   </section>
   <!-- /page title -->
-  {% endblock %}
+
+  <!-- Fee Structure Section -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-12 text-center mb-4">
+        <h2 class="mb-0 text-nowrap mr-3 fadeInDown text-left">Course Fee Structure</h2>
+      </div>
+    </div>
+
+    <div class="table-responsive fadeInUp">
+      <table class="table table-bordered text-center">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th>Course Name</th>
+            <th>Tuition Fee</th>
+            <th>Examination Fee</th>
+            <th>Library Fee</th>
+            <th>Hostel Fee (Optional)</th>
+            <th>Total Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5-Year Integrated LLB (BA LLB / BBA LLB / BSc LLB)</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹X,XXX per year</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹XX,XXX per year</td>
+          </tr>
+          <tr>
+            <td>3-Year Unitary LLB</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹X,XXX per year</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹XX,XXX per year</td>
+          </tr>
+          <tr>
+            <td>Diploma in Law</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹X,XXX per year</td>
+            <td>₹X,XXX per semester</td>
+            <td>₹XX,XXX per year</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-12 text-left">
+        <p class="text-black">Note: Additional charges may apply for study materials, moot court activities, and other academic facilities.</p>
+      </div>
+    </div>
+  </section>
+{% endblock %}
